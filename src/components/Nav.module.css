@@ -26,6 +26,27 @@
   color: var(--black);
 }
 
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  font-size: 13px;
+  color: var(--gray-400);
+  transition: color 0.15s;
+}
+
+.navLink:hover {
+  color: var(--black);
+}
+
+.navLinkActive {
+  color: var(--black);
+  font-weight: 500;
+}
+
 .back {
   font-size: 13px;
   color: var(--gray-600);
