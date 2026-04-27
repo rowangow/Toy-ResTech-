@@ -1,0 +1,223 @@
+.wrapper {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.feedHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.feedTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.dotLive {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+}
+
+.dotPulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gray-400);
+  flex-shrink: 0;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.feedControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.termTabs {
+  display: flex;
+  gap: 2px;
+  background: var(--gray-100);
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.term,
+.termActive {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.term {
+  color: var(--gray-600);
+  background: none;
+}
+
+.term:hover {
+  color: var(--black);
+}
+
+.termActive {
+  color: var(--black);
+  background: var(--white);
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.refresh {
+  font-size: 12px;
+  color: var(--gray-400);
+  padding: 4px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  font-family: var(--font);
+  transition: all 0.12s;
+  cursor: pointer;
+  background: var(--white);
+}
+
+.refresh:hover:not(:disabled) {
+  color: var(--black);
+  border-color: var(--gray-400);
+}
+
+.refresh:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.fetchedAt {
+  font-size: 11px;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--gray-200);
+}
+
+.post {
+  display: block;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--gray-200);
+  transition: background 0.12s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post:hover {
+  background: var(--gray-100);
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: var(--gray-400);
+}
+
+.subreddit {
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+.dot {
+  color: var(--gray-200);
+}
+
+.time,
+.score {
+  color: var(--gray-400);
+}
+
+.postTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.postBody {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.postFooter {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--gray-400);
+}
+
+/* Loading skeletons */
+.state {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skeleton {
+  height: 60px;
+  background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+.skeleton:nth-child(2) {
+  height: 48px;
+  width: 85%;
+}
+
+.skeleton:nth-child(3) {
+  height: 48px;
+  width: 70%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.stateMsg {
+  padding: 40px 28px;
+  font-size: 14px;
+  color: var(--gray-400);
+  text-align: center;
+}
