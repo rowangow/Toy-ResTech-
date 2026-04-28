@@ -66,6 +66,7 @@ export default function CompanyDetail() {
         {/* Social listening */}
         <SocialFeed
           searchTerms={company.redditSearchTerms}
+          relevanceTerms={company.relevanceTerms}
           companyName={company.name}
         />
       </div>

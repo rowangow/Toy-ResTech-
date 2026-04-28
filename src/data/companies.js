@@ -29,7 +29,8 @@ export const companies = [
       },
     ],
     competitors: ["Discuss.io", "Voxpopme", "Remesh", "Conveo"],
-    redditSearchTerms: ["Listen Labs", "ListenLabs AI research"],
+    redditSearchTerms: ['"Listen Labs"', '"ListenLabs"'],
+    relevanceTerms: ["listen labs", "listenlabs"],
     twitterHandle: "listenlabsai",
   },
   {
@@ -62,7 +63,8 @@ export const companies = [
       },
     ],
     competitors: ["Listen Labs", "Speak", "Marvin"],
-    redditSearchTerms: ["Conveo AI", "Conveo market research"],
+    redditSearchTerms: ['"Conveo" research', '"Conveo" interview'],
+    relevanceTerms: ["conveo"],
     twitterHandle: "conveo_ai",
   },
   {
@@ -95,7 +97,8 @@ export const companies = [
       },
     ],
     competitors: ["YouGov", "Attest", "Norstat", "Savanta"],
-    redditSearchTerms: ["Focaldata", "Focaldata survey"],
+    redditSearchTerms: ['"Focaldata"', '"Focal data" survey'],
+    relevanceTerms: ["focaldata", "focal data"],
     twitterHandle: "focaldata",
   },
   {
@@ -128,8 +131,77 @@ export const companies = [
       },
     ],
     competitors: ["Dovetail", "Aurelius", "Marvin", "Notably"],
-    redditSearchTerms: ["CoLoop AI", "CoLoop research"],
+    redditSearchTerms: ['"CoLoop" research', '"CoLoop" AI'],
+    relevanceTerms: ["coloop", "co-loop"],
     twitterHandle: "coloop_ai",
+  },
+  {
+    id: "remesh",
+    name: "Remesh",
+    tagline: "Live AI-moderated group conversations at scale",
+    founded: "2015",
+    hq: "New York, NY",
+    stage: "Series B",
+    employees: "51–100",
+    website: "remesh.ai",
+    category: "Qualitative Research",
+    positioning:
+      "Enables brands and researchers to hold live, moderated group conversations with hundreds of participants simultaneously. AI clusters responses in real-time, giving moderators a live view of emerging themes and consensus. Bridges the depth of focus groups with the scale of surveys.",
+    products: [
+      {
+        name: "Live Conversations",
+        description:
+          "Real-time group sessions with up to 1,000 participants, AI-moderated and automatically segmented by response type.",
+      },
+      {
+        name: "Real-time Analysis",
+        description:
+          "Instant AI clustering of open-text responses, surfacing agreement, disagreement, and outlier perspectives as the session runs.",
+      },
+      {
+        name: "Concept Testing",
+        description:
+          "Rapid stimulus testing with live groups — advertising, packaging, messaging — with immediate reaction capture.",
+      },
+    ],
+    competitors: ["Discuss.io", "Listen Labs", "Voxpopme", "dscout"],
+    redditSearchTerms: ['"Remesh" research', '"Remesh" AI survey'],
+    relevanceTerms: ["remesh"],
+    twitterHandle: "remesh_ai",
+  },
+  {
+    id: "marvin",
+    name: "Marvin",
+    tagline: "AI-powered research repository and analysis",
+    founded: "2020",
+    hq: "San Francisco, CA",
+    stage: "Seed",
+    employees: "1–10",
+    website: "heymarvin.com",
+    category: "Research Synthesis",
+    positioning:
+      "Positions itself as the AI research repository for UX and insights teams — a central place to store, tag, search, and synthesise qualitative findings from interviews, usability tests, and survey responses. Differentiates through deep AI tagging and cross-study synthesis rather than just storage.",
+    products: [
+      {
+        name: "Research Repository",
+        description:
+          "Centralises interview recordings, transcripts, notes, and artefacts with AI-generated tags and summaries.",
+      },
+      {
+        name: "AI Synthesis",
+        description:
+          "Surfaces themes, patterns, and recurring findings across multiple studies with cited evidence trails.",
+      },
+      {
+        name: "Interview Notetaker",
+        description:
+          "Joins live research calls to capture, transcribe, and auto-tag insights in real time.",
+      },
+    ],
+    competitors: ["Dovetail", "Aurelius", "CoLoop", "Notably"],
+    redditSearchTerms: ['"Hey Marvin" research', '"heymarvin"'],
+    relevanceTerms: ["heymarvin", "hey marvin", "marvin.app", "marvin research", "marvin ux", "marvin insights", "marvin interview"],
+    twitterHandle: "heymarvin",
   },
 ];
 
