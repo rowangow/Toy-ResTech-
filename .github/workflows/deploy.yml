@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - claude/market-research-agencies-viz-B4mhP
+      - claude/ai-research-tracker-anPFa
       - main
 
 permissions:
