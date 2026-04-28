@@ -94,7 +94,7 @@ export default function AgenciesMap() {
 
   const cx  = (v) => M.left + (v / 100) * iw
   const cy  = (v) => M.top  + ((100 - v) / 100) * ih
-  const rad = (s) => 10 + Math.sqrt(s / 100) * Math.min(iw, ih) * 0.065
+  const rad = (s) => 8 + Math.pow(s / 100, 0.6) * Math.min(iw, ih) * 0.08
 
   const handleBubbleClick = useCallback((agency, e) => {
     e.stopPropagation()
