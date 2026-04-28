@@ -70,7 +70,7 @@ export const companies = [
   {
     id: "focaldata",
     name: "Focaldata",
-    tagline: "Smarter quantitative research powered by AI",
+    tagline: "Smarter quantitative research and AI Coworker for consumer insight",
     founded: "2018",
     hq: "London, UK",
     stage: "Series A",
